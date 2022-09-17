@@ -28,13 +28,6 @@ router.get("/carrinhocompras/:id", (req, res) => {
   return shoppingCar.find((el) => el.id === id);
 });
 
-router.get("/carrinhocompras", (req, res) => {
-  return shoppingCar;
-});
 
-router.get("/carrinhocompras/:id", (req, res) => {
-  const id = req.params.id;
-  return shoppingCar.find((el) => el.id === id);
-});
 
 module.exports = router;
