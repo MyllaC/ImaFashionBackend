@@ -4,6 +4,10 @@ const { v4: uuidv4 } = require("uuid");
 
 const shoppingCar = [];
 
+router.get("/", (req, res) => {
+  res.send('imafashion');
+});
+
 router.post("/carrinhodecompras", (req, res) => {
   const { name, code, price, quantity, size } = req.body;
 
