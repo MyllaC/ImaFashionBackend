@@ -3,7 +3,7 @@ const server = express()
 const port = 3000
 
 server.use(express.json())
-server.use('/', require('./route/produtosRoute'))
+server.use('/', require('./produtosRoute'))
 
 
 server.listen(port, () => {
